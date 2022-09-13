@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <h1>Users</h1>
+</head>
+
+<body>
+    <div id="container">
+        <form name="regForm" action="javascript:void(0);" onsubmit="submitter()" class="regForm">
+            <div>
+                <label for="fName">First Name:</label>
+                <input type="text" name="fName" id="fName" required>
+            </div>
+            <div>
+                <label for="lName">Last Name:</label>
+                <input type="text" name="lName" id="lName" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+        <div id="output">
+            <label for="about">Record:</label>
+            <textarea name="about" id="about" cols="27" rows="5" form="regForm"></textarea>
+        </div>
+    </div>
+    <div>
+        <table id="myTable"></table>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
